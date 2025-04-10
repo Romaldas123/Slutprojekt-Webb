@@ -1,0 +1,157 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: #E3EFD3;
+    color: #0D2B1D;
+}
+
+.header {
+    padding: 20px;
+    background-color: #0D2B1D;
+    color: #E3EFD3;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}   
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #AEC3B0;
+}
+
+.header p:hover {
+    color: #6BBF71;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #345635;
+    margin-top: 50px;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.catalog {
+    padding: 40px 20px;
+    background-color: #0D2B1D;
+    color: #E3EFD3;
+}
+
+.catalog h2 {
+    color: #a37e2c; 
+    margin-bottom: 20px;
+    font-size: 2rem; 
+    font-family: 'CS Hiera Classic Font', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.catalog-item {
+    width: 30%;
+    background-color: #345635;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+    color: #E3EFD3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.catalog-link {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.customization {
+    padding: 40px 20px;
+    background-color: #6BBF71;
+    color: #0D2B1D;
+}
+
+.customization h2 {
+    margin-bottom: 20px;
+}
+
+.locator {
+    padding: 40px 20px;
+    background-color: #345635;
+    color: #E3EFD3;
+}
+
+.locator h2 {
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 40px 20px;
+    background-color: #0D2B1D;
+    color: #E3EFD3;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-item {
+    width: 30%;
+    background-color: #AEC3B0;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 150px;
+    color: #0D2B1D;
+}
