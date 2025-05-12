@@ -18,21 +18,31 @@ html, body {
     width: 100%;
     transition: top 0.3s;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .header h1 {
     margin: 0;
     font-size: 2.5rem;
     font-weight: bold;
-}   
-
-.header p {
-    margin: 10px 0 0;
-    font-size: 1rem;
-    color: #AEC3B0;
 }
 
-.header p:hover {
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: #E3EFD3;
+}
+
+.header-icons i {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header-icons i:hover {
     color: #6BBF71;
 }
 
