@@ -1,67 +1,117 @@
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     text-align: center;
     overflow-x: hidden;
-    background-color: #E3EFD3;
+    background: #E3EFD3;
     color: #0D2B1D;
 }
 
 .header {
-    padding: 20px;
-    background-color: #0D2B1D;
-    color: #E3EFD3;
-    border-radius: 0;
+    padding: 20px 40px;
+    background: #0D2B1D;
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.3s;
+    transition: transform 0.3s;
     z-index: 1000;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between; 
 }
 
-.header h1 {
+.left-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.nav-menu ul {
+    list-style: none;
     margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.header-icons {
+    padding: 0;
     display: flex;
     gap: 20px;
-    font-size: 1.5rem;
-    color: #E3EFD3;
 }
 
-.header-icons i {
-    cursor: pointer;
+.nav-menu a {
+    color: #E3EFD3;
+    text-decoration: none;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
-.header-icons i:hover {
+.nav-menu a:hover {
     color: #6BBF71;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    padding-right: 100px; 
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    color: #E3EFD3;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 0; 
+    margin: 0; 
+}
+
+.search-btn:hover {
+    color: #6BBF71;
+}
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30vh; 
+    background: #0D2B1D;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    padding-bottom: 20px;
+    z-index: 1100;
+    transition: all 0.3s; 
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.search-overlay.active {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.search-overlay input {
+    font-size: 1rem;
+    padding: 10px;
+    width: 250px;
 }
 
 .hero {
     position: relative;
     width: 100vw;
     height: 500px;
+    background: #345635;
+    margin-top: 80px;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: #345635;
-    margin-top: 50px;
 }
 
 .hero video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     width: 100vw;
     height: 100%;
     object-fit: cover;
@@ -69,17 +119,16 @@ html, body {
 
 .catalog {
     padding: 40px 20px;
-    background-color: #0D2B1D;
+    background: #0D2B1D;
     color: #E3EFD3;
 }
 
 .catalog h2 {
-    color: #a37e2c; 
+    color: #a37e2c;
     margin-bottom: 20px;
-    font-size: 2rem; 
+    font-size: 2rem;
     font-family: 'CS Hiera Classic Font', serif;
     font-style: italic;
-    text-align: center;
 }
 
 .catalog-container {
@@ -90,7 +139,7 @@ html, body {
 
 .catalog-item {
     width: 30%;
-    background-color: #345635;
+    background: #345635;
     padding: 20px;
     border-radius: 10px;
     min-height: 200px;
@@ -102,14 +151,14 @@ html, body {
 
 .catalog-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .catalog-item video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -117,36 +166,31 @@ html, body {
 }
 
 .catalog-link {
-    text-decoration: none; 
+    text-decoration: none;
     color: inherit;
 }
 
-.customization {
+.customization, .locator, .footer {
     padding: 40px 20px;
-    background-color: #6BBF71;
+}
+
+.customization {
+    background: #0D2B1D;
     color: #0D2B1D;
 }
 
-.customization h2 {
-    margin-bottom: 20px;
-}
-
 .locator {
-    padding: 40px 20px;
-    background-color: #345635;
+    background: #345635;
     color: #E3EFD3;
-}
-
-.locator h2 {
-    margin-bottom: 20px;
 }
 
 .footer {
-    padding: 40px 20px;
-    background-color: #0D2B1D;
+    background: #0D2B1D;
     color: #E3EFD3;
 }
 
+.customization h2,
+.locator h2,
 .footer h2 {
     margin-bottom: 20px;
 }
@@ -159,7 +203,7 @@ html, body {
 
 .footer-item {
     width: 30%;
-    background-color: #AEC3B0;
+    background: #AEC3B0;
     padding: 20px;
     border-radius: 10px;
     min-height: 150px;
