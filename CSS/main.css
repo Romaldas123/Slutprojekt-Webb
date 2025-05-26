@@ -1,0 +1,18 @@
+:root {
+  --rolex-green: #0D2B1D;
+  --rolex-gold: #a37e2c;
+  --rolex-light: #E3EFD3;
+  --rolex-mid: #345635;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--rolex-green);
+  background-color: var(--rolex-light);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}

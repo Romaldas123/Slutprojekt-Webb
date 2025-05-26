@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolex | Officiell Webbplats</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/customization.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ad309bcaa1.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-container">
+        <div class="header-left">
+          <img
+            src="rolex-logo.png"
+            alt="Rolex Logo"
+            class="logo"
+          />
+          <nav class="header-nav">
+            <a href="#watches">WATCHES</a>
+            <a href="#choose-model">CHOOSE MODEL</a>
+            <a href="#find-store">FIND STORE</a>
+            <a href="#kontakt">KONTAKT</a>
+          </nav>
+        </div>
+        <div class="header-right">
+          <button id="search-btn">SEARCH</button>
+          <button class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search for watches, collections..."
+          id="search-input"
+          class="search-input"
+        />
+        <div class="search-close">
+          <button id="close-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay loop muted playsinline>
+        <source src="17197593-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1>ROLEX TIMEPIECES</h1>
+          <p>
+            Discover the perfect combination of performance and elegance
+          </p>
+          <a href="#watches" class="hero-btn">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="watches">
+      <div class="catalog-container">
+        <h2>
+          Timeless Elegance: Our Iconic Models
+        </h2>
+        <div class="catalog-grid">
+          <!-- Item 1 -->
+          <div class="catalog-item">
+            <video autoplay loop muted playsinline>
+              <source src="6230464-hd_1920_1080_24fps.mp4" type="video/mp4" />
+            </video>
+            <div class="catalog-item-content">
+              <h3>Submariner</h3>
+              <p>The diver's watch</p>
+              <a href="klocka1.html">Discover</a>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="catalog-item">
+            <video autoplay loop muted playsinline>
+              <source src="17186323-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+            </video>
+            <div class="catalog-item-content">
+              <h3>Daytona</h3>
+              <p>The racing chronograph</p>
+              <a href="#">Discover</a>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="catalog-item">
+            <video autoplay loop muted playsinline>
+              <source src="17197594-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+            </video>
+            <div class="catalog-item-content">
+              <h3>Datejust</h3>
+              <p>The classic watch</p>
+              <a href="#">Discover</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-viewall">
+          <a href="#">View All Collections</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="customization" id="choose-model">
+  <div class="customization-container">
+    <h2>Customize Your Rolex</h2>
+    <div class="customization-content">
+      <div class="customization-options">
+        <div class="customization-group">
+          <h3>Main Type</h3>
+          <div class="option-grid">
+            <button class="option-button" data-type="main" data-value="Submariner">Submariner</button>
+            <button class="option-button" data-type="main" data-value="Datejust">Datejust</button>
+            <button class="option-button" data-type="main" data-value="Day-date">Day-date</button>
+            <button class="option-button" data-type="main" data-value="Explorer">Explorer</button>
+            <button class="option-button" data-type="main" data-value="Daytona">Daytona</button>
+            <button class="option-button" data-type="main" data-value="GMT-Master II">GMT-Master II</button>
+            </div>
+            <img src="" alt="" id="main-type-image">
+          </div>
+
+        <div class="customization-group">
+          <h3>Case Color</h3>
+          <div class="color-options">
+            <span class="color-option" data-type="case" data-value="Silver" style="background-color: silver;"></span>
+            <span class="color-option" data-type="case" data-value="Gold" style="background-color: gold;"></span>
+            <span class="color-option" data-type="case" data-value="Black" style="background-color: black;"></span>
+            <span class="color-option" data-type="case" data-value="Rose Gold" style="background-color: #B76E79;"></span>
+          </div>
+
+        <div class="customization-group">
+          <h3>Dial Color</h3>
+          <div class="color-options">
+            <span class="color-option" data-type="dial" data-value="White" style="background-color: white;"></span>
+            <span class="color-option" data-type="dial" data-value="Black" style="background-color: black;"></span>
+            <span class="color-option" data-type="dial" data-value="Blue" style="background-color: blue;"></span>
+            <span class="color-option" data-type="dial" data-value="Green" style="background-color: green;"></span>
+          </div>
+
+        <div class="customization-group">
+          <h3>Strap Type</h3>
+          <div class="option-grid">
+            <button class="option-button" data-type="strap-type" data-value="Leather">Leather</button>
+            <button class="option-button" data-type="strap-type" data-value="Metal">Metal</button>
+            <button class="option-button" data-type="strap-type" data-value="Silicone">Silicone</button>
+          </div>
+
+        <div class="customization-group">
+          <h3>Strap Color</h3>
+          <div class="color-options">
+            <span class="color-option" data-type="strap-color" data-value="Black" style="background-color: black;"></span>
+            <span class="color-option" data-type="strap-color" data-value="Brown" style="background-color: brown;"></span>
+            <span class="color-option" data-type="strap-color" data-value="Silver" style="background-color: silver;"></span>
+          </div>
+</section>
+
+    <!-- Store Locator Section -->
+    <section class="store" id="find-store">
+      <div class="store-container">
+        <h2>Find an Official Rolex Retailer</h2>
+        <div class="store-search">
+          <input type="text" placeholder="Search by city or postal code" />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="store-grid">
+          <!-- Store 1 -->
+          <div class="store-card">
+            <h3>Rolex Boutique Stockholm</h3>
+            <p>
+              Birger Jarlsgatan 15<br />
+              111 45 Stockholm
+            </p>
+            <p>+46 8 545 678 90</p>
+            <div class="store-links">
+              <a href="#"><i class="fas fa-map-marker-alt"></i> Map</a>
+              <a href="#"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+            </div>
+          </div>
+          <!-- Store 2 -->
+          <div class="store-card">
+            <h3>Rolex Boutique Gothenburg</h3>
+            <p>
+              Kungsportsavenyen 25<br />
+              411 36 Gothenburg
+            </p>
+            <p>+46 31 765 432 10</p>
+            <div class="store-links">
+              <a href="#"><i class="fas fa-map-marker-alt"></i> Map</a>
+              <a href="#"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+            </div>
+          </div>
+          <!-- Store 3 -->
+          <div class="store-card">
+            <h3>Rolex Boutique Malmö</h3>
+            <p>
+              Stortorget 5<br />
+              211 34 Malmö
+            </p>
+            <p>+46 40 123 456 78</p>
+            <div class="store-links">
+              <a href="#"><i class="fas fa-map-marker-alt"></i> Map</a>
+              <a href="#"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        <div class="store-viewall">
+          <a href="#">View All Stores</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="kontakt">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- About -->
+          <div class="footer-section">
+            <h3>About Rolex</h3>
+            <ul>
+              <li><a href="#">Our World</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Craftsmanship</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+          <!-- Customer Service -->
+          <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Watch Care</a></li>
+              <li><a href="#">Authenticity</a></li>
+            </ul>
+          </div>
+          <!-- Legal -->
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+          <!-- Social -->
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <h4>Newsletter</h4>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Your email address" />
+              <button><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <img
+            src="rolex-logo.png"
+            alt="Rolex Logo"
+          />
+          <p>&copy; 2023 Rolex SA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
