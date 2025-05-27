@@ -23,7 +23,7 @@
       <div class="header-container">
         <div class="header-left">
           <img
-            src="rolex-logo.png"
+            src="img/rolex-logo.png"
             alt="Rolex Logo"
             class="logo"
           />
@@ -87,7 +87,7 @@
 
     <section class="hero" id="hero">
       <video class="hero-video" autoplay loop muted playsinline>
-        <source src="17197593-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+        <source src="video/17197593-uhd_3840_2160_30fps.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay">
         <div class="hero-text">
@@ -100,44 +100,43 @@
       </div>
     </section>
 
-    <!-- Catalog Section -->
     <section class="catalog" id="watches">
       <div class="catalog-container">
         <h2>
           Timeless Elegance: Our Iconic Models
         </h2>
         <div class="catalog-grid">
-          <!-- Item 1 -->
+      
           <div class="catalog-item">
             <video autoplay loop muted playsinline>
-              <source src="6230464-hd_1920_1080_24fps.mp4" type="video/mp4" />
+              <source src="video/6230464-hd_1920_1080_24fps.mp4" type="video/mp4" />
             </video>
             <div class="catalog-item-content">
               <h3>Submariner</h3>
               <p>The diver's watch</p>
-              <a href="klocka1.html">Discover</a>
+              <a href="">Discover</a>
             </div>
           </div>
-          <!-- Item 2 -->
+
           <div class="catalog-item">
             <video autoplay loop muted playsinline>
-              <source src="17186323-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+              <source src="video/17186323-uhd_3840_2160_30fps.mp4" type="video/mp4" />
             </video>
             <div class="catalog-item-content">
               <h3>Daytona</h3>
               <p>The racing chronograph</p>
-              <a href="#">Discover</a>
+              <a href="">Discover</a>
             </div>
           </div>
           <!-- Item 3 -->
           <div class="catalog-item">
             <video autoplay loop muted playsinline>
-              <source src="17197594-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+              <source src="video/17197594-uhd_3840_2160_30fps.mp4" type="video/mp4" />
             </video>
             <div class="catalog-item-content">
               <h3>Datejust</h3>
               <p>The classic watch</p>
-              <a href="#">Discover</a>
+              <a href="">Discover</a>
             </div>
           </div>
         </div>
@@ -147,62 +146,79 @@
       </div>
     </section>
 
-    <!-- Customization Section -->
-    <section class="customization" id="choose-model">
+<section class="customization" id="choose-model">
   <div class="customization-container">
     <h2>Customize Your Rolex</h2>
     <div class="customization-content">
-      <div class="customization-options">
-        <div class="customization-group">
-          <h3>Main Type</h3>
-          <div class="option-grid">
-            <button class="option-button" data-type="main" data-value="Submariner">Submariner</button>
-            <button class="option-button" data-type="main" data-value="Datejust">Datejust</button>
-            <button class="option-button" data-type="main" data-value="Day-date">Day-date</button>
-            <button class="option-button" data-type="main" data-value="Explorer">Explorer</button>
-            <button class="option-button" data-type="main" data-value="Daytona">Daytona</button>
-            <button class="option-button" data-type="main" data-value="GMT-Master II">GMT-Master II</button>
-            </div>
-            <img src="" alt="" id="main-type-image">
+      <div class="watch-selection">
+        <div class="watch-navigation">
+          <button class="nav-arrow prev" id="prevWatch">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="watch-description-box">
+            <h3 id="watch-name">Submariner</h3>
+            <p id="watch-description">The Submariner's design has been entirely dedicated to its function as a diving watch since 1953. Its robust case, luminescent hands and indices, and rotating bezel make it the ultimate underwater companion.</p>
           </div>
+
+          <button class="nav-arrow next" id="nextWatch">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="watch-display">
+          <img src="" alt="Watch Display" id="watch-display">
+        </div>
+      </div>
 
         <div class="customization-group">
           <h3>Case Color</h3>
           <div class="color-options">
-            <span class="color-option" data-type="case" data-value="Silver" style="background-color: silver;"></span>
-            <span class="color-option" data-type="case" data-value="Gold" style="background-color: gold;"></span>
-            <span class="color-option" data-type="case" data-value="Black" style="background-color: black;"></span>
-            <span class="color-option" data-type="case" data-value="Rose Gold" style="background-color: #B76E79;"></span>
+            <span class="color-option" data-type="case" data-value="Silver" style="background-color: #C0C0C0;"></span>
+            <span class="color-option" data-type="case" data-value="Gold" style="background-color: #FFD700;"></span>
+            <span class="color-option" data-type="case" data-value="Black" style="background-color: #000000;"></span>
+            <span class="color-option" data-type="case" data-value="Blue" style="background-color: #0000FF;"></span>
+            <span class="color-option" data-type="case" data-value="Green" style="background-color: #008000;"></span>
+            <span class="color-option" data-type="case" data-value="White" style="background-color: #FFFFFF;"></span>
+            <span class="color-option" data-type="case" data-value="Champagne" style="background-color: #F7E7CE;"></span>
+            <span class="color-option" data-type="case" data-value="Brown" style="background-color: #8B4513;"></span>
           </div>
 
         <div class="customization-group">
           <h3>Dial Color</h3>
           <div class="color-options">
-            <span class="color-option" data-type="dial" data-value="White" style="background-color: white;"></span>
-            <span class="color-option" data-type="dial" data-value="Black" style="background-color: black;"></span>
-            <span class="color-option" data-type="dial" data-value="Blue" style="background-color: blue;"></span>
-            <span class="color-option" data-type="dial" data-value="Green" style="background-color: green;"></span>
-          </div>
-
-        <div class="customization-group">
-          <h3>Strap Type</h3>
-          <div class="option-grid">
-            <button class="option-button" data-type="strap-type" data-value="Leather">Leather</button>
-            <button class="option-button" data-type="strap-type" data-value="Metal">Metal</button>
-            <button class="option-button" data-type="strap-type" data-value="Silicone">Silicone</button>
+             <span class="color-option" data-type="dial" data-value="Silver" style="background-color: #C0C0C0;"></span>
+             <span class="color-option" data-type="dial" data-value="Gold" style="background-color: #FFD700;"></span>
+             <span class="color-option" data-type="dial" data-value="Black" style="background-color: #000000;"></span>
+             <span class="color-option" data-type="dial" data-value="Blue" style="background-color: #0000FF;"></span>
+             <span class="color-option" data-type="dial" data-value="Green" style="background-color: #008000;"></span>
+             <span class="color-option" data-type="dial" data-value="White" style="background-color: #FFFFFF;"></span>
+             <span class="color-option" data-type="dial" data-value="Champagne" style="background-color: #F7E7CE;"></span>
+             <span class="color-option" data-type="dial" data-value="Brown" style="background-color: #8B4513;"></span>
           </div>
 
         <div class="customization-group">
           <h3>Strap Color</h3>
           <div class="color-options">
-            <span class="color-option" data-type="strap-color" data-value="Black" style="background-color: black;"></span>
-            <span class="color-option" data-type="strap-color" data-value="Brown" style="background-color: brown;"></span>
-            <span class="color-option" data-type="strap-color" data-value="Silver" style="background-color: silver;"></span>
+           <span class="color-option" data-type="strap" data-value="Silver" style="background-color: #C0C0C0;"></span>
+           <span class="color-option" data-type="strap" data-value="Gold" style="background-color: #FFD700;"></span>
+           <span class="color-option" data-type="strap" data-value="Black" style="background-color: #000000;"></span>
+           <span class="color-option" data-type="strap" data-value="Blue" style="background-color: #0000FF;"></span>
+           <span class="color-option" data-type="strap" data-value="Green" style="background-color: #008000;"></span>
+           <span class="color-option" data-type="strap" data-value="White" style="background-color: #FFFFFF;"></span>
+           <span class="color-option" data-type="strap" data-value="Champagne" style="background-color: #F7E7CE;"></span>
+           <span class="color-option" data-type="strap" data-value="Brown" style="background-color: #8B4513;"></span>
           </div>
 </section>
 
-    <!-- Store Locator Section -->
-    <section class="store" id="find-store">
+<div class="order-section">
+    <button class="order-button">ORDER NOW</button>
+</div>
+
+ <section class="store" id="find-store">
       <div class="store-container">
         <h2>Find an Official Rolex Retailer</h2>
         <div class="store-search">
@@ -225,7 +241,6 @@
           </button>
         </div>
         <div class="store-grid">
-          <!-- Store 1 -->
           <div class="store-card">
             <h3>Rolex Boutique Stockholm</h3>
             <p>
@@ -238,12 +253,11 @@
               <a href="#"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
             </div>
           </div>
-          <!-- Store 2 -->
           <div class="store-card">
-            <h3>Rolex Boutique Gothenburg</h3>
+            <h3>Rolex Boutique Göteborg</h3>
             <p>
               Kungsportsavenyen 25<br />
-              411 36 Gothenburg
+              411 36 Göteborg
             </p>
             <p>+46 31 765 432 10</p>
             <div class="store-links">
@@ -251,7 +265,6 @@
               <a href="#"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
             </div>
           </div>
-          <!-- Store 3 -->
           <div class="store-card">
             <h3>Rolex Boutique Malmö</h3>
             <p>
@@ -271,11 +284,9 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" id="kontakt">
       <div class="footer-container">
         <div class="footer-grid">
-          <!-- About -->
           <div class="footer-section">
             <h3>About Rolex</h3>
             <ul>
@@ -285,7 +296,6 @@
               <li><a href="#">Sustainability</a></li>
             </ul>
           </div>
-          <!-- Customer Service -->
           <div class="footer-section">
             <h3>Customer Service</h3>
             <ul>
@@ -295,7 +305,6 @@
               <li><a href="#">Authenticity</a></li>
             </ul>
           </div>
-          <!-- Legal -->
           <div class="footer-section">
             <h3>Legal</h3>
             <ul>
@@ -305,7 +314,6 @@
               <li><a href="#">Accessibility</a></li>
             </ul>
           </div>
-          <!-- Social -->
           <div class="footer-section">
             <h3>Connect With Us</h3>
             <div class="footer-social">
@@ -323,7 +331,7 @@
         </div>
         <div class="footer-bottom">
           <img
-            src="rolex-logo.png"
+            src="img/rolex-logo.png"
             alt="Rolex Logo"
           />
           <p>&copy; 2023 Rolex SA. All rights reserved.</p>
@@ -331,6 +339,6 @@
       </div>
     </footer>
 
-    <script src="main.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
